@@ -1,0 +1,1 @@
+This is a folder used for images i upload for using as a url.
