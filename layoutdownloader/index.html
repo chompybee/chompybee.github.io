@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Downloading layout.mp4...</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  a {
+    color: #4da3ff;
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
+  p { opacity: 0.8; }
+</style>
+</head>
+<body>
+  <h1>Downloading layout.mp4…</h1>
+  <p>Your download should start automatically.</p>
+  <a id="manual-link" href="/assets/layout.mp4" download="layout.mp4">
+    Click here if the download doesn't start
+  </a>
+
+  <script>
+    window.addEventListener('load', function () {
+      const filePath = '/assets/layout.mp4';
+      const link = document.createElement('a');
+      link.href = filePath;
+      link.download = 'layout.mp4';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>
