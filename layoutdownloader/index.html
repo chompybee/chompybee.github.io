@@ -29,13 +29,13 @@
 <body>
   <h1>Downloading layout.png…</h1>
   <p>Your download should start automatically.</p>
-  <a id="manual-link" href="/assets/layout.png" download="layout.png">
+  <a id="manual-link" href="/layoutdownloader/assets/layout.png" download="layout.png">
     Click here if the download doesn't start
   </a>
 
   <script>
     window.addEventListener('load', function () {
-      const filePath = '/assets/layout.png';
+      const filePath = '/layoutdownloader/assets/layout.png';
       const link = document.createElement('a');
       link.href = filePath;
       link.download = 'layout.png';
