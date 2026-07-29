@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Downloading layout.mp4...</title>
+<title>Downloading layout.png...</title>
 <style>
   body {
     font-family: system-ui, sans-serif;
@@ -27,18 +27,18 @@
 </style>
 </head>
 <body>
-  <h1>Downloading layout.mp4…</h1>
+  <h1>Downloading layout.png…</h1>
   <p>Your download should start automatically.</p>
-  <a id="manual-link" href="/assets/layout.mp4" download="layout.mp4">
+  <a id="manual-link" href="/assets/layout.png" download="layout.png">
     Click here if the download doesn't start
   </a>
 
   <script>
     window.addEventListener('load', function () {
-      const filePath = '/assets/layout.mp4';
+      const filePath = '/assets/layout.png';
       const link = document.createElement('a');
       link.href = filePath;
-      link.download = 'layout.mp4';
+      link.download = 'layout.png';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
